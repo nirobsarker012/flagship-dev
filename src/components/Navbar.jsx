@@ -6,7 +6,7 @@ import { MdBookmarkAdd } from "react-icons/md";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar p-0 bg-base-100 shadow-sm">
+      <div className="container navbar p-0 bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
             <div

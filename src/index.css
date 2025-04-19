@@ -1,2 +1,8 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+.container {
+  width: calc(100% - 20px);
+  max-width: 1320px;
+  margin-inline: auto;
+}
