@@ -13,7 +13,7 @@ const Hero = () => {
         <h1 className="font-thin text-7xl text-gray-900">
           Browse,Search,View,Buy
         </h1>
-        <p className="text-gray-500">
+        <p className="text-gray-500 md:max-w-[460px] mx-auto">
           Best place to browse, search, view details and purchase of top
           flagship phones of the current time - FlagshipFaceOff
         </p>
@@ -31,7 +31,7 @@ const Hero = () => {
               <span className="relative">Search</span>
             </span>
             <span
-              class="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
+              className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
               data-rounded="rounded-lg"
             ></span>
           </button>
