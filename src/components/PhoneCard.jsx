@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router";
+import { MdDelete } from "react-icons/md";
+import Button from "./ui/Button";
 
-const PhoneCard = ({ phone }) => {
-  //   console.log(phone);
+const PhoneCard = ({ phone, deletable, handleDelete }) => {
   const { image, name, description, id } = phone || {};
   return (
     <div>
@@ -25,6 +26,14 @@ const PhoneCard = ({ phone }) => {
             </Link>
           </div>
         </div>
+        {deletable && (
+          <div
+            onClick={() => handleDelete(id)}
+            className="absolute -top-2 -right-2"
+          >
+            <Button label={<MdDelete />}></Button>
+          </div>
+        )}
       </div>
     </div>
   );

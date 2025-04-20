@@ -9,16 +9,7 @@ const PhoneDetails = () => {
   const data = useLoaderData();
   const { id } = useParams();
   const singlePhone = data?.find((phone) => phone?.id === parseInt(id));
-  const {
-    brand,
-    name,
-    model,
-    image,
-    price,
-    description,
-    storage,
-    camera_info,
-  } = singlePhone || {};
+  const { name, image } = singlePhone || {};
   const handleFavourite = () => {
     addFavourites(singlePhone);
   };
